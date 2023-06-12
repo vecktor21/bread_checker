@@ -1,0 +1,13 @@
+body{
+
+}
+.content{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 700px;
+}
