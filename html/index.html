@@ -9,15 +9,44 @@
 </head>
 <body>
     <div class="content">
-
-        <form action="">
-            
-        </form>
-
+        <div class="form">
+            <div class="form_row">
+                <label for="standart">Standart</label>
+                <select name="" id="standart" name="standart" onchange="onchangeHandler(this)">
+                    <option value="0">MS 610</option>
+                    <option value="1">MS 1635</option>
+                    <option value="2">Annex B</option>
+                    <option value="3">MS 144</option>
+                    <option value="4">Annex C</option>
+                    <option value="5">Annex D</option>
+                    <option value="6">Total Solids</option>
+                </select>
+                <label for="standartValue" id="standartValueLabel">value of characteristic "Moisture Content":</label>
+                <input type="number" id="standartValue" name="standartValue">
+            </div>
+            <div class="form_row">
+                <label for="">Bread type</label>
+                <select name="" id="bread">
+                    <option value="0">White bread</option>
+                    <option value="1">Brown bread</option>
+                    <option value="2">Whole wheat bread</option>
+                    <option value="3">Milk bread</option>
+                    <option value="4">Cassava bread</option>
+                    <option value="5">Sweet potato bread</option>
+                </select>
+            </div>
+            <div class="submit">
+                <button onclick="onclickHandler()">submit</button>
+            </div>
+        </div>        
         <div class="image">
             <img src="../img/table.jpg" alt="">
         </div>
+        <div class="result invisible" id="result">
+            text
+        </div>
     </div>
+
 
 
     <script src="../scripts/script.js"></script>

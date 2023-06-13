@@ -1,13 +1,62 @@
 body{
-
 }
 .content{
+    display: flex;
+    flex-direction: column;
     width: 900px;
     margin: 0 auto;
-    display: flex;
+}
+.image{
+    display: flex;  
     justify-content: center;
 }
-
 .image img{
-    width: 700px;
+    width: 900px;
+}
+.form *{
+    font-size: 20px;
+}
+
+select,input{
+    padding: 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: lightblue;
+    padding: 5px;
+    
+}
+.form_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.form_row *{
+    margin: 10px 10px;
+}
+.form_row input{
+    width: 100px;
+}
+.submit{
+    display: flex;
+    justify-content: space-around;
+}
+.result{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.match{
+    background-color: green;
+}
+.not_match{
+    background-color: red;
 }
